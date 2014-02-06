@@ -1,7 +1,3 @@
-#################
-# initial setup #
-#################
-
 remove_file 'README.rdoc'
 create_file 'README.md'
 
@@ -9,12 +5,12 @@ gem_group :development, :test do
   gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'bullet'
   gem 'letter_opener'
   gem 'pry-rails'
   gem 'quiet_assets'
   gem 'rspec-rails'
   gem 'thin'
-  gem 'bullet'
 end
 
 gem_group :production do
@@ -81,7 +77,7 @@ end
 
 # if yes? "Do you want to generate a root controller?"
 #   name = ask("What should it be called?").underscore
-#   generate :controller, "#{name} index"
-#   route "root to: '#{name}\#index'"
+#   generate :controller, "#{name} home"
+#   route "root to: '#{name}\#home'"
 #   git add: ".", commit: "-am 'added #{name} controller & root path'"
 # end
